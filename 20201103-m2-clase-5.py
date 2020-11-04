@@ -75,6 +75,15 @@ print(lista_numeros)
 lista_numeros.sort(reverse=True)
 print(lista_numeros)
 
+# agregar múltiples elementos
+lista_numeros = lista_numeros + [1,2,3,4,5]
+print(lista_numeros)
+lista_numeros.append([100, 200, 300, 400])
+print(lista_numeros)
+
+# eliminar elemento en posición específica
+lista_numeros.pop(2)
+print(lista_numeros)
 
 
 
