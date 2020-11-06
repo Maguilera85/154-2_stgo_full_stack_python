@@ -145,13 +145,3 @@ super_resultado = super_funcion(40, otra_funcion_mas)
 print("Super Resultado 2: ", super_resultado)
 
 # ==================================================================
-
-
-# 6 ==================================================================
-# decorators para funciones en python
-
-
-
-
-
-
