@@ -13,7 +13,7 @@ def avance(n):
         time.sleep(0.4)
         print(".")
 
-'''
+
 def empaquetar(fn):
     def fn_aumentada():
         fn()
@@ -88,7 +88,7 @@ def producir_te():
 
 producir_te() # usando la funcion decorada
 
-'''
+
 
 
 # ===================================================
