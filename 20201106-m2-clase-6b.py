@@ -8,10 +8,13 @@ import time
 #    resultado = a + b + c
 #    return resultado
 
+# intento de mejora funcion avance
+# se agrega lineas 16 y 17 
 def avance(n):
-    for i in range(0, n):
+    for i in range(0,n):
         time.sleep(0.4)
-        print(".")
+        lista.append(".")
+        print(lista[i]*i)
 
 
 def empaquetar(fn):
