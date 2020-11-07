@@ -35,7 +35,7 @@ def potenciar_preparacion(fn):
 
 
 def producir_cafe():
-    print("\nMoliedo, y mezclando café con agua")
+    print("\nMoliendo, y mezclando café con agua")
     avance(6)
     print("Café terminado!\n")
 
@@ -74,7 +74,7 @@ producir_postre_con_crema_y_empaquetado()
 
 # ejemplo previo que hace lo mismo que el decorador que se explica a continuación
 def producir_te():
-    print("\nMoliedo, y mezclando té con agua")
+    print("\nMoliendo, y mezclando té con agua")
     avance(6)
     print("Té terminado!\n")
 
@@ -85,7 +85,7 @@ producir_te()
 @empaquetar
 @potenciar_preparacion
 def producir_te():
-    print("\nMoliedo, y mezclando té con agua")
+    print("\nMoliendo, y mezclando té con agua")
     avance(6)
     print("Té terminado!\n")
 
@@ -96,7 +96,7 @@ producir_te() # usando la funcion decorada
 
 # ===================================================
 # ejemplo útil de decoradores para funciones en python
-
+print("\n\nEjemplo Medición Tiempo de Ejecución con Decorator")
 def medir_tiempo_ejecucion(fn):
     def fn_aumentada(*args):
         t0 = time.time()
