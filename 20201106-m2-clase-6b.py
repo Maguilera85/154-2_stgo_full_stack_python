@@ -8,8 +8,7 @@ import time
 #    resultado = a + b + c
 #    return resultado
 
-# intento de mejora funcion avance
-# se agrega lineas 16 y 17 
+#mejora funcion avance
 def avance(n):
     for j in range(0,7):
         for i in range(0,n):
