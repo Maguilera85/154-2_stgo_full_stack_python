@@ -11,10 +11,11 @@ import time
 # intento de mejora funcion avance
 # se agrega lineas 16 y 17 
 def avance(n):
-    for i in range(0,n):
-        time.sleep(0.4)
-        lista.append(".")
-        print(lista[i]*i)
+    for j in range(0,7):
+        for i in range(0,n):
+            time.sleep(0.02)
+            print(".", end = "", flush = True)
+    print("")
 
 
 def empaquetar(fn):
