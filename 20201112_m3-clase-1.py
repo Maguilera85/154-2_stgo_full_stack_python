@@ -92,6 +92,9 @@ class Contador:
     def decrementar(self):
         self.valor = self.valor -1
 
+    def __del__(self):
+        print("He muerto")
+
 
 contador1 = Contador()
 contador2 = Contador()
@@ -105,3 +108,5 @@ contador2.decrementar()
 print(contador1.valor)
 print(contador2.valor)
 
+
+del(contador1)
