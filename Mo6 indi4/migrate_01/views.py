@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from .models import Departamento,Asignatura,Profesor,Alumno,Transportista
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views import generic
 # Create your views here.
 
 def asignaturax(request):
@@ -37,5 +40,12 @@ def mostrar_alumnos(request):
     context = {'alumnos':listar_alumnos}
     return render(request,'migrate_01/alumno.html', context= context)
 
+
+
+
+class Asignatura(LoginRequiredMixin,generic.TemplateView):
+
+    template_name = 'migrate_01/asignatura.html'
+    #login_url = 'migrate_01:login'
 
 
