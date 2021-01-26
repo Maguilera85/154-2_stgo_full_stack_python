@@ -43,9 +43,8 @@ def mostrar_alumnos(request):
 
 
 
-class Asignatura(LoginRequiredMixin,generic.TemplateView):
-
+class Asignatura1(LoginRequiredMixin, generic.TemplateView):
     template_name = 'migrate_01/asignatura.html'
-    #login_url = 'migrate_01:login'
+    login_url = 'migrate_01:login'
 
 
